@@ -1,0 +1,19 @@
+name = "11-17 Princess Python Hackathon"
+
+[files]
+"https://rebeccatufts25.pyscriptapps.com/talking-on-a-channel/latest/py/channel.py" = ""
+"https://rebeccatufts25.pyscriptapps.com/talking-to-a-hub/latest/py/Hub.py" = ""
+"https://chrisrogers.pyscriptapps.com/talking-to-a-hub/latest/py/pyConst.py" = ""
+"https://chrisrogers.pyscriptapps.com/talking-to-a-hub/latest/py/SpikePrime.py" = ""
+"https://chrisrogers.pyscriptapps.com/talking-to-a-hub/latest/py/TechElement.py" = ""
+"https://chrisrogers.pyscriptapps.com/talking-to-a-hub/latest/py/TechElement_EP2.py" = ""
+"https://chrisrogers.pyscriptapps.com/talking-on-spike/latest/py/RS232.py" = ""
+"https://chrisrogers.pyscriptapps.com/talking-on-spike/latest/mpy/bledevice.py" = ""
+"https://chrisrogers.pyscriptapps.com/talking-on-spike/latest/mpy/bleexample.py" = ""
+"https://chrisrogers.pyscriptapps.com/talking-on-spike/latest/mpy/SPIKEbleCEEO.py" = ""
+"https://chrisrogers.pyscriptapps.com/talking-on-spike/latest/mpy/MIDI.py" = ""
+
+[js_modules.main]
+"https://chrisrogers.pyscriptapps.com/talking-to-a-hub/latest/js/ble2.js" = "ble"
+"code.js" = "code_editor"
+"https://cdn.jsdelivr.net/npm/micro-repl@0.8.2/serial.js" = "micro_repl"
