@@ -1,17 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  
 
-  <head>
+    <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <title>PyScript Classroom Workspace</title>
 
   <!-- Safari SharedArrayBuffer shim (needed for PyScript/MicroPython) -->
-  <script src="./safari-sab.js"></script>
+  <script src="https://rebeccatufts25.pyscriptapps.com/11-17-princess-python-hackathon/latest/safari-sab.js"></script>
 
   <!-- COOP/COEP Service Worker injection (THIS IS THE MAGIC FIX) -->
   <script>
@@ -19,7 +15,7 @@
     (({ document: d, navigator: { serviceWorker: s } }) => {
       if (d) {
         const { currentScript: c } = d;
-        s.register(c.src, { scope: c.getAttribute('scope') || '.' }).then(r => {
+        s.register('coi-serviceworker.js');).then(r => {
           r.addEventListener('updatefound', () => location.reload());
           if (r.active && !s.controller) location.reload();
         });
@@ -462,7 +458,7 @@
             -->
 
             <!-- Tech Elements Script -->
-            <script type="mpy" src="./4_techElements.py" config="./pyscript.toml" worker></script>
+            <script type="mpy" src="https://rebeccatufts25.pyscriptapps.com/11-17-princess-python-hackathon/latest/4_techElements.py" config="https://rebeccatufts25.pyscriptapps.com/11-17-princess-python-hackathon/latest/pyscript.toml" worker></script>
           </div>
 
           <!-- CHANNEL IT (left visually) -->
@@ -470,7 +466,7 @@
             <div class="top-title channel">Channel It</div>
 
             <div id="all_things_channels"></div>
-            <script type="mpy" src="./3_channels.py" config="./pyscript.toml" worker></script>
+            <script type="mpy" src="https://rebeccatufts25.pyscriptapps.com/11-17-princess-python-hackathon/latest/3_channels.py" config="https://rebeccatufts25.pyscriptapps.com/11-17-princess-python-hackathon/latest/pyscript.toml" worker></script>
           </div>
         </div>
       </section>
@@ -552,7 +548,7 @@
           <button id="clearRepl">Clear REPL</button>
         </div>
         <div id="replContainer">
-          <script id="python-terminal" type="mpy" src="./main_copy.py" config="./pyscript.toml" env="image" terminal worker></script>
+          <script id="python-terminal" type="mpy" src="https://rebeccatufts25.pyscriptapps.com/11-17-princess-python-hackathon/latest/main_copy.py" config="https://rebeccatufts25.pyscriptapps.com/11-17-princess-python-hackathon/latest/pyscript.toml" env="image" terminal worker></script>
         </div>
       </section>
     </div>
